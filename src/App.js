@@ -20,7 +20,7 @@ function App() {
     id: '3',
     username: 'Любовь Чернова', 
     avatar: 'https://aipa.ru/189871-thickbox_default/sejlor-mun-sailor-moon-anime-raskraska-kartina-po-nomeram-na-kholste.jpg' ,
-    text: 'It was many and many a year ago, In a kingdom by the sea, That a maiden there lived whom you may know By the name of Annabel Lee; And this maiden she lived with no other thought That to love and be loved by me.',
+    audio: "",
     date: '5Pm'
   },]
 
@@ -34,6 +34,11 @@ function App() {
         </div>
         {d.text && <div className="dialog__item__text">{d.text}</div>}
         {d.img && <img src={d.img} className="dialog__item__img" />}
+        {d.audio && (
+          <audio controls className="dialog__item__audio">
+            <source src={d.audio} type="audio/mp3" />
+          </audio>
+        )}
       </div>
     </div>
   ))
