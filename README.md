@@ -1,4 +1,4 @@
-### https://alessarver.github.io/rotate-image-reactt/
+### https://alessarver.github.io/rotate-image-react/
 
 ### Build commands
 
